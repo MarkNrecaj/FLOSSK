@@ -14,7 +14,6 @@ function doublechar2($string, $times)
             $filtred += [$spString[$i] => 1];
         }
     }
-
     return array_filter($filtred, fn ($value) => $value == $times);
     // return $filtred;
 }
@@ -27,13 +26,15 @@ function challange2($arr, $y, $z)
     $newarr = [];
     for ($i = 0; $i < count($arr); $i++) {
         if ($arr[$i] > $z && count($newarr) < $y) {
-            $newarr[] =$arr[$i];
+            $newarr[] = $arr[$i];
         }
     }
     return $newarr;
 }
 
-print_r(challange2([12, 1, 405, 390, 1093,401,402,403,40, 1000], 4, 400));
+// print_r(challange2([12, 1, 405, 390, 1093, 401, 402, 403, 40, 1000], 4, 400));
+
+
 
 // $newarr = [1,2];
 // print_r($newarr);
